@@ -1,5 +1,20 @@
 require 'spec_helper'
 
+ORGANIC_PRODUCE = [
+  "Strawberries",
+  "Potatoes",
+  "Grapes",
+  "Avocadoes",
+  "Asparagus"
+]
+CONVENTIONAL_PRODUCE = [
+  "Grapefruit",
+  "Pineapple",
+  "Oranges",
+  "Watermelon",
+  "Eggplant"
+]
+
 describe 'When a learning to build nested arrays,' do
   it 'the assembled_matrix method returns a nested array made from two constants, CONVENTIONAL_PRODUCE and ORGANIC_PRODUCE' do
     expect(assembled_matrix).to eq([CONVENTIONAL_PRODUCE, ORGANIC_PRODUCE])
